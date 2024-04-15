@@ -82,7 +82,14 @@ footer{
     position: absolute;
     bottom: 8px;
     left: 16px;
-    font-size: 18px;   
+    font-size: 18px;
+    transition: .2s ease;
+}
+
+footer:hover  {
+    background: rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px black;
 }
 
 div {
