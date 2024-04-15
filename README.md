@@ -2,4 +2,4 @@ AUTEUR : JessyTS
 
 CECI EST UN PETIT PROJET POUR APPRENDRE LES BASES DU DEVELOPPEMENT WEB ET LE PHP
 
-![Alt text](image.png)
+![Alt text](preview.png)
