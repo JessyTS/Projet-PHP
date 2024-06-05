@@ -1,7 +1,11 @@
-<?php include_once 'header.php' ?>
-        
-<div>
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus animi, aut, distinctio ad dignissimos fugit recusandae vel totam libero beatae sunt, accusamus voluptate temporibus qui provident omnis repellat eius enim.
-</div>
-
-<?php include_once 'footer.php' ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
