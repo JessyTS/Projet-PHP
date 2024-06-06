@@ -1,18 +1,27 @@
 <?php
     $devine = 150;
-    require 'header.php'
+    $resultat = null;
+    $good = false;
+    $erreur = null;
+    require 'header.php';
+
+    if (isset($_POST)) {
+        if ($_POST['chiffre'] < $devine) {
+            $erreur = "Le nombre est inferieur";
+        } elseif ($_POST['chiffre'] > $devine) {
+            $erreur = "Le nombre est trop grand";
+        } elseif ($_POST['chiffre'] == $devine) {
+            $erreur = "Le nombre est exacte";
+        };
+    };
 ?>
 
-<?php if ($_GET['chiffre'] > $devine): ?>
-    Votre chiffre est trop grand !!
-<?php elseif ($_GET['chiffre'] < $devine): ?>
-    Votre chiffre est trop petit
-<?php else: ?>
-    Bravo vous avez deviner le chiffre !!
-<?php endif ?>
-
-<form action="/jeu.php" method="GET">
-    <input type="number" name="chiffre" placeholder="Entre 0 et 1000" value="<?= $_GET['chiffre'] ?>">
+<form action="/jeu.php" method="POST">
+    <?php if ($erreur) {
+        echo $erreur;
+        }; 
+    ?>
+    <input type="number" name="chiffre" placeholder="Entre 0 et 1000" value="">
     <button type="submit">Deviner</button>
 </form>
 
