@@ -1,0 +1,26 @@
+<?php
+    function result_panier () {
+        <<<HTML
+HTML;
+    };
+
+    function result (array $tabl) {
+        $jessy = 0;
+        if (isset($tabl)) {
+            foreach ($tabl as $k => $v) {
+                $jessy = $jessy + $v;
+            };
+            return $jessy;
+        };
+    };
+
+    function result_data ($tabl) {
+        $result = [];
+        if (isset($tabl)) {
+            foreach ($tabl as $k => $v) {
+                $result[$k] = $v;
+            };
+            return $result;
+        };
+    };
+?>
