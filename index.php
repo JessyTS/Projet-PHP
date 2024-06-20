@@ -71,7 +71,7 @@
                         <label for="<?= $cle ?>"><?= $cle ?> - <?= $valeur ?> €</label> <br>
                     <?php endforeach ?>
                 </fieldset> <br> <br>
-                <button type="submit">Voir mon Panier</button>
+                <button class="custom-button" type="submit">Voir mon Panier</button>
             </fieldset>
         </form>
     </div>

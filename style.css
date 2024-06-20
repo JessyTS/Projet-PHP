@@ -91,13 +91,25 @@ tr {
     font-size: 40px;
 }
 
-button {
-    background-color: aquamarine;
-    width: 150px;
-    height: 50px;
-}
-
 table, td, tr {
     padding: 10px;
     font-size: 25px;
+}
+
+.custom-button {
+    background-color: rgb(238, 255, 86);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.custom-button:hover {
+    background-color: #45a049;
+    color: white;
+    box-shadow: 0px 0px 5px 0px black;
 }
