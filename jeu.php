@@ -17,10 +17,9 @@
 ?>
 
 <form action="/jeu.php" method="POST">
-    <?php if ($erreur) {
-        echo $erreur;
-        }; 
-    ?>
+    <?php if ($erreur): ?>
+        <div class="alert"><?=$erreur?></div>
+    <?php endif ?>
     <input type="number" name="chiffre" placeholder="Entre 0 et 1000" value="">
     <button type="submit">Deviner</button>
 </form>
