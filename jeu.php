@@ -20,7 +20,7 @@
     <?php if ($erreur): ?>
         <div class="alert"><?=$erreur?></div>
     <?php endif ?>
-    <input type="number" name="chiffre" placeholder="Entre 0 et 1000" value="">
+    <input class="input" type="number" name="chiffre" placeholder="Entre 0 et 1000" value="">
     <button type="submit">Deviner</button>
 </form>
 
