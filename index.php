@@ -35,12 +35,12 @@
     if (isset($_POST["item_bas_marque"])) {
         $data_bas = result($_POST["item_bas_marque"]);
         $pan_bas = result_data($_POST["item_bas_marque"]);
-        $table_ch2 = result_data($_POST["item_bas"]);
+        $table_ch2 = result_data($_POST["item_bas_marque"]);
     };
     if (isset($_POST["item_bas"])) {
         $radio_data = result($_POST["item_bas"]);      
         $pan_radio = result_data($_POST["item_bas"]);
-        $table_bas = result_data($_POST["item_bas_marque"]);
+        $table_bas = result_data($_POST["item_bas"]);
     };
 ?>
 
@@ -74,45 +74,41 @@
         </form>
     </div>
     <div>
-        <?php if (isset($_POST["item_chemise"])): ?>
-            <table>
-                <tr class="head_tb">
-                    <td>Produit</td>
-                    <td>Prix</td>
-                </tr>
-                <?php if (isset($table_ch)): ?>
-                    <?php foreach ($table_ch as $k => $v): ?>
-                        <tr>
-                            <td><?=$k?></td>
-                            <td><?=$v?> €</td>
-                        </tr>
-                    <?php endforeach ?>
-                <?php endif ?>
-                <?php if (isset($table_ch2)): ?>
-                    <?php foreach ($table_ch2 as $k => $v): ?>
-                        <tr>
-                            <td><?=$k?></td>
-                            <td><?=$v?> €</td>
-                        </tr>
-                    <?php endforeach ?>
-                <?php endif ?>
-                <?php if (isset($table_bas)): ?>
-                    <?php foreach ($table_bas as $k => $v): ?>
-                        <tr>
-                            <td><?=$k?></td>
-                            <td><?=$v?> €</td>
-                        </tr>
-                    <?php endforeach ?>
-                <?php endif ?>
-                <tr class="foot">
-                    <td>Total</td>
-                    <td><?=($data_chemise + $data_bas + $data_bas)?> €</td>
-                </tr>
-            </table>  
-            <div class="alert">Votre panier fait <?=($data_chemise + $data_bas + $data_bas)?> €</div>
-        <?php elseif (isset($_POST)): ?>
-            <div class="alert_none">Votre panier est vide !!</div>
-        <?php endif ?>
+        <table>
+            <tr class="head_tb">
+                <td>Produit</td>
+                <td>Prix</td>
+            </tr>
+            <?php if (isset($table_ch)): ?>
+                <?php foreach ($table_ch as $k => $v): ?>
+                    <tr>
+                        <td><?=$k?></td>
+                        <td><?=$v?> €</td>
+                    </tr>
+                <?php endforeach ?>
+            <?php endif ?>
+            <?php if (isset($table_ch2)): ?>
+                <?php foreach ($table_ch2 as $k => $v): ?>
+                    <tr>
+                        <td><?=$k?></td>
+                        <td><?=$v?> €</td>
+                    </tr>
+                <?php endforeach ?>
+            <?php endif ?>
+            <?php if (isset($table_bas)): ?>
+                <?php foreach ($table_bas as $k => $v): ?>
+                    <tr>
+                        <td><?=$k?></td>
+                        <td><?=$v?> €</td>
+                    </tr>
+                <?php endforeach ?>
+            <?php endif ?>
+            <tr class="foot">
+                <td>Total</td>
+                <td><?=($data_chemise + $data_bas + $radio_data)?> €</td>
+            </tr>
+        </table>
+        <div class="alert">Votre panier fait <?=($data_chemise + $data_bas + $radio_data)?> €</div>  
     </div>
 
     
