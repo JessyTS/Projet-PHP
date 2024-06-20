@@ -88,12 +88,7 @@ tr {
 
 .alert {
     background-color: burlywood;
-    font-size: 80px;
-}
-
-.alert_none {
-    background-color: rgb(255, 145, 0);
-    font-size: 80px;
+    font-size: 40px;
 }
 
 button {

@@ -19,7 +19,9 @@
         "Amiri" => 14,
     ];
 
-    $jessy = 0;
+    $item = 0;
+    $item2 = 0;
+    $item3 = 0;
     $data_chemise = 0;
     $data_bas = 0;
     $pan_chemise = null;
@@ -75,11 +77,14 @@
     </div>
     <div>
         <table>
-            <tr class="head_tb">
-                <td>Produit</td>
-                <td>Prix</td>
-            </tr>
+            <?php if (isset($table_ch) || isset($table_ch2) || isset($table_bas)): ?>
+                <tr class="head_tb">
+                    <td>Produit</td>
+                    <td>Prix</td>
+                </tr>
+            <?php endif ?>
             <?php if (isset($table_ch)): ?>
+                <?php $item = count($table_ch); ?>
                 <?php foreach ($table_ch as $k => $v): ?>
                     <tr>
                         <td><?=$k?></td>
@@ -88,6 +93,7 @@
                 <?php endforeach ?>
             <?php endif ?>
             <?php if (isset($table_ch2)): ?>
+                <?php $item2 = count($table_ch2); ?>
                 <?php foreach ($table_ch2 as $k => $v): ?>
                     <tr>
                         <td><?=$k?></td>
@@ -96,6 +102,7 @@
                 <?php endforeach ?>
             <?php endif ?>
             <?php if (isset($table_bas)): ?>
+                <?php $item3 = count($table_bas); ?>
                 <?php foreach ($table_bas as $k => $v): ?>
                     <tr>
                         <td><?=$k?></td>
@@ -103,17 +110,13 @@
                     </tr>
                 <?php endforeach ?>
             <?php endif ?>
-            <tr class="foot">
-                <td>Total</td>
-                <td><?=($data_chemise + $data_bas + $radio_data)?> €</td>
-            </tr>
+            <?php if (isset($table_ch) || isset($table_ch2) || isset($table_bas)): ?>
+                <tr class="foot">
+                    <td>Total</td>
+                    <td><?=($data_chemise + $data_bas + $radio_data)?> €</td>
+                </tr>
+            <?php endif ?>
         </table>
-        <div class="alert">Votre panier fait <?=($data_chemise + $data_bas + $radio_data)?> € | <?=(count($table_ch) + count($table_ch2) + count($table_bas))?> Items</div>  
+        <div class="alert">Votre panier fait <?=($data_chemise + $data_bas + $radio_data)?> € | <?=($item + $item2 + $item3)?> Items</div>  
     </div>
-
-    
-<pre>
-    <h1>Debug !!</h1>
-    <?= print_r($_POST) ?>
-</pre>
 <?php require 'footer.php' ?>

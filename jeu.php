@@ -5,7 +5,7 @@
     $erreur = null;
     require 'header.php';
 
-    if (isset($_POST)) {
+    if (isset($_POST['chiffre'])) {
         if ($_POST['chiffre'] < $devine) {
             $erreur = "Le nombre est inferieur";
         } elseif ($_POST['chiffre'] > $devine) {
