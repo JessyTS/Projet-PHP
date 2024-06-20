@@ -5,6 +5,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    background-color: rgb(196, 196, 196);
+}
+
 .head {
     width: 100%;
     height: 40px;
@@ -79,7 +83,7 @@ tr {
 
 .foot, .head_tb {
     background-color: rgb(167, 214, 255);
-    border: 0px none transparent;
+    border: 5px solid black;
 }
 
 .alert {
@@ -96,4 +100,9 @@ button {
     background-color: aquamarine;
     width: 150px;
     height: 50px;
+}
+
+table, td, tr {
+    padding: 10px;
+    font-size: 25px;
 }

@@ -1,10 +1,5 @@
 <?php
-    function result_panier () {
-        <<<HTML
-HTML;
-    };
-
-    function result (array $tabl) {
+    function result ($tabl) {
         $jessy = 0;
         if (isset($tabl)) {
             foreach ($tabl as $k => $v) {
