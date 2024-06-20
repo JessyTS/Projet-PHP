@@ -18,4 +18,8 @@
             return $result;
         };
     };
+
+    function creneaux_html ($creneaux) {
+
+    };
 ?>
