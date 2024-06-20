@@ -108,7 +108,7 @@
                 <td><?=($data_chemise + $data_bas + $radio_data)?> €</td>
             </tr>
         </table>
-        <div class="alert">Votre panier fait <?=($data_chemise + $data_bas + $radio_data)?> €</div>  
+        <div class="alert">Votre panier fait <?=($data_chemise + $data_bas + $radio_data)?> € | <?=(count($table_ch) + count($table_ch2) + count($table_bas))?> Items</div>  
     </div>
 
     
