@@ -113,3 +113,116 @@ table, td, tr {
     color: white;
     box-shadow: 0px 0px 5px 0px black;
 }
+
+.card {
+    overflow: visible;
+    width: 250px;
+    height: 210px;
+    margin: 10px;
+    padding: 15px;
+    display:inline-flex;
+    border: 1px solid transparent;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(177, 166, 152);
+    border-radius: 15px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 8px 0px black;
+    transform: scale(1.02, 1.02);
+    background-color: rgb(194, 182, 168);
+}
+
+.form_file, .ta, .sl, .bt {
+    display: block;
+    margin: 10px;
+}
+
+.form_file {
+    position: relative;
+    box-shadow: 0px 0px 5px 0px black;
+    width: 375px;
+    left: 100px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form_file:focus-within {
+    box-shadow: 0px 0px 40px 0px rgb(177, 166, 152);
+}
+
+.ta:focus {
+    background-color: rgb(194, 182, 168);
+    box-shadow: 0px 0px 3px 0px black;
+    mask-border: 0px none transparent;
+    transform: scale(1.05, 1.05);
+}
+
+.ta:hover {
+    background-color: rgb(194, 182, 168);
+    transform: scale(1.05, 1.05);
+}
+
+.ta {
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    border: 0px none transparent;
+    background-color: rgb(177, 166, 153);
+    border-radius: 15px;
+    resize: none;
+}
+
+.sl:hover {
+    border: 0px none transparent;
+    border-bottom: 2px solid rgb(194, 182, 168);
+    transform: scale(1.05, 1.05);
+}
+
+.sl {
+    outline: none;
+    border: 0px none transparent;
+    border-bottom: 2px solid black;
+    width: 350px;
+    height: 40px;
+    background-color: transparent;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.bt {
+    border: 3px solid rgb(177, 166, 153);
+    outline: none;
+    background-color: transparent;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.bt:hover {
+    border: 3px solid transparent;
+    background-color: rgb(194, 182, 168);
+    box-shadow: 0px 0px 2px 0px black;
+    font-size: 20px;
+    transform: scale(1.05, 1.05);
+}
+
+.cb {
+    width: 20px;
+    height: 20px;
+    color: red;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.lcb {
+    font-size: 15px;
+    color: red;
+}
+
+h1 {
+    text-align: center;
+}

@@ -11,9 +11,9 @@
         <div class="head">
             <span><a class="head-acceuil" href="/index.php">Panier</a></span>
             <span><a class="head-indice" href="/jeu.php">Jeu Devine</a></span>
-            <span><a class="head-visite" href="/heure.php">Horaire</a></span>
-            <span><a class="head-faq" href="#" onclick="alert('Indice !')">FaQ</a></span>
-            <span><a class="head-support" href="#" onclick="alert('Good !')">Support</a></span>
+            <span><a class="head-visite" href="/fichier.php">Cartes Mots</a></span>
+            <span><a class="head-faq" href="/admin_fichier.php">Gestion Cartes</a></span>
+            <!-- <span><a class="head-support" href="#" onclick="alert('Good !')">Support</a></span> -->
             <span><input class="input" type="search" name="" id="" placeholder="Recherche" submit></span>
         </div>
     </header>
