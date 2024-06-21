@@ -35,7 +35,7 @@
 <h1>Création de Cartes de Mots</h1>
 
 <form class="form_file" action="admin_fichier.php" method="POST">
-    <textarea class="ta" name="data_add" cols="30" rows="10" maxlength="100"></textarea>
+    <textarea class="ta" name="data_add" cols="30" rows="10" maxlength="100" placeholder="Contenu de Votre Carte !!"></textarea>
     <select class="sl" name="carte">
         <option value="un">Prémière Carte</option>
         <option value="deux">Deuxième Carte</option>
